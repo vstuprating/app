@@ -7,47 +7,28 @@
             <h4 class="title">Результати тестування</h4>
 
             <ul class="result-test">
-                <li class="result-test__item">
+                <li class="result-test__item" ng-repeat="item in subjects track by $index">
                     <div class="result-test__item__in">
                         <select class="result-test__item__name">
-                            <option value="">Українська мова</option>
+                            <option value="" ng-bind="item.name"></option>
                         </select>
                         <figure class="rating">
-                            <span style="width: 76%"></span>
+                            <span ng-style="{width: item.value - 100 + '%'}"></span>
                         </figure>
                     </div>
                     <input class="result-test__item__val"
-                            value="186"/>
-                </li>
-                <li class="result-test__item">
-                    <div class="result-test__item__in">
-                        <select class="result-test__item__name">
-                            <option value="">Математика</option>
-                        </select>
-                        <figure class="rating">
-                            <span style="width: 76%"></span>
-                        </figure>
-                    </div>
-                    <input class="result-test__item__val"
-                            value="186"/>
-                </li>
-                <li class="result-test__item">
-                    <div class="result-test__item__in">
-                        <select class="result-test__item__name">
-                            <option value="">Фізика</option>
-                        </select>
-                        <figure class="rating">
-                            <span style="width: 76%"></span>
-                        </figure>
-                    </div>
-                    <input class="result-test__item__val"
-                            value="186"/>
+                           type="number"
+                           ng-value="item.value"
+                           ng-model="item.value"
+                           ng-blur="successInput(item)"
+                    />
                 </li>
             </ul>
 
             <br/>
 
-            <button class="btn btn--primaty btn--middle">Додати предмет</button>
+            <button class="btn btn--primaty btn--middle"
+                    ng-click="addSubject()">Додати предмет</button>
         </section>
 
         <section class="search main-card">
@@ -96,26 +77,26 @@
                 <div class="col-2">
                     <label class="search__label">Набрані бали (атестат, екзамен, МАН)</label>
                     <input class="search__field search__field--min"
-                           type="text"
+                           type="number"
                            placeholder="ЗНО"/>
                     <input class="search__field search__field--min"
-                           type="text"
+                           type="number"
                            placeholder="C"/>
                     <input class="search__field search__field--min"
-                           type="text"
+                           type="number"
                            placeholder="E"/>
                     <input class="search__field search__field--min"
-                           type="text"
+                           type="number"
                            placeholder="O"/>
                     <input class="search__field search__field--min"
-                           type="text"
+                           type="number"
                            placeholder="П"/>
                 </div>
             </div>
 
             <br/>
 
-            <button class="btn">Підтвердити</button>
+            <button class="btn btn--full">Підтвердити</button>
 
         </section>
 

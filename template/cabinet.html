@@ -1,0 +1,192 @@
+
+<main class="main">
+
+    <div class="row">
+
+        <section class="result main-card">
+            <h4 class="title">Результати тестування</h4>
+
+            <ul class="result-test">
+                <li class="result-test__item" ng-repeat="item in subjects track by $index">
+                    <div class="result-test__item__in">
+                        <select class="result-test__item__name">
+                            <option value="" ng-bind="item.name"></option>
+                        </select>
+                        <figure class="rating rating--pink">
+                            <span ng-style="{width: item.value - 100 + '%'}"></span>
+                        </figure>
+                    </div>
+                    <input class="result-test__item__val"
+                           type="number"
+                           ng-value="item.value"
+                           ng-model="item.value"
+                           ng-blur="successInput(item)"
+                    />
+                </li>
+            </ul>
+
+            <br/>
+
+            <button class="btn btn--primaty btn--middle"
+                    ng-click="addSubject()">Додати предмет</button>
+        </section>
+
+        <section class="search main-card">
+            <h4 class="title">Мої тести</h4>
+
+            <ul class="list">
+                <li class="list__item">
+                    <div class="list__item__in">
+                        <p class="list__item__text">Пробний тест з української мови та літератури</p>
+                        <span class="list__value">165.5 / 200</span>
+                    </div>
+                    <button class="list__item__btn btn btn--min">Спробувати</button>
+                </li>
+                <li class="list__item">
+                    <div class="list__item__in">
+                        <p class="list__item__text">Пробний тест з української мови та літератури</p>
+                        <span class="list__value">165.5 / 200</span>
+                    </div>
+                    <button class="list__item__btn btn btn--min">Спробувати</button>
+                </li>
+                <li class="list__item">
+                    <div class="list__item__in">
+                        <p class="list__item__text">Пробний тест з української мови та літератури</p>
+                        <span class="list__value">165.5 / 200</span>
+                    </div>
+                    <button class="list__item__btn btn btn--min is-success">Пройти знову</button>
+                </li>
+                <li class="list__item">
+                    <div class="list__item__in">
+                        <p class="list__item__text">Пробний тест з української мови та літератури</p>
+                        <span class="list__value">165.5 / 200</span>
+                    </div>
+                    <button class="list__item__btn btn btn--min is-success">Пройти знову</button>
+                </li>
+            </ul>
+
+            <br/>
+        </section>
+
+        <section class="search main-card">
+            <h4 class="title">Прогрес з курсів</h4>
+
+            <ul class="list list--progress">
+                <li class="list__item">
+                    <div class="list__item__in">
+                        <p class="list__item__text">Українська мова та література</p>
+                        <span class="list__value">77%</span>
+                    </div>
+                    <figure class="list-rating rating rating--pink">
+                        <span style="width: 77%"></span>
+                    </figure>
+                </li>
+                <li class="list__item">
+                    <div class="list__item__in">
+                        <p class="list__item__text">Українська мова та література</p>
+                        <span class="list__value">63%</span>
+                    </div>
+                    <figure class="list-rating rating rating--pink">
+                        <span style="width: 63%"></span>
+                    </figure>
+                </li>
+                <li class="list__item">
+                    <div class="list__item__in">
+                        <p class="list__item__text">Українська мова та література</p>
+                        <span class="list__value">93%</span>
+                    </div>
+                    <figure class="list-rating rating rating--pink">
+                        <span style="width: 93%"></span>
+                    </figure>
+                </li>
+                <li class="list__item">
+                    <div class="list__item__in">
+                        <p class="list__item__text">Українська мова та література</p>
+                        <span class="list__value">51%</span>
+                    </div>
+                    <figure class="list-rating rating rating--pink">
+                        <span style="width: 51%"></span>
+                    </figure>
+                </li>
+            </ul>
+
+            <br/>
+        </section>
+
+    </div>
+
+
+    <div class="row main-card">
+        <h6 class="section-title">
+            Ваші курси
+            <label class="select-box">
+                з
+                <select>
+                    <option value="математики" selected>математики</option>
+                </select>
+            </label>
+        </h6>
+
+        <ul class="time-line">
+            <li class="time-line__item is-completed">
+                <h6 class="time-line__title">
+                    <span class="time-line__status">1/30</span>
+                    Основи алгебри
+                </h6>
+                <p class="time-line__text">
+                    Відправна точка курсу з математики
+                    Тільки основна інформація з прикладами
+                    та зображеннями. Почнемо!
+                </p>
+            </li>
+            <li class="time-line__item is-completed">
+                <h6 class="time-line__title">
+                    <span class="time-line__status">1/30</span>
+                    Основи алгебри
+                </h6>
+                <p class="time-line__text">
+                    Відправна точка курсу з математики
+                    Тільки основна інформація з прикладами
+                    та зображеннями. Почнемо!
+                    Більше тексту, бла-бла-бла-бла-бла!
+                </p>
+            </li>
+            <li class="time-line__item is-start">
+                <h6 class="time-line__title">Основи алгебри</h6>
+                <p class="time-line__text">
+                    Відправна точка курсу з математики
+                    Тільки основна інформація з прикладами
+                    та зображеннями. Почнемо!
+                </p>
+            </li>
+            <li class="time-line__item">
+                <h6 class="time-line__title">Основи алгебри</h6>
+                <p class="time-line__text">
+                    Відправна точка курсу з математики
+                    Тільки основна інформація з прикладами
+                    та зображеннями. Почнемо!
+                    Більше тексту, бла-бла-бла-бла-бла!
+                </p>
+            </li>
+            <li class="time-line__item">
+                <h6 class="time-line__title">Основи алгебри</h6>
+                <p class="time-line__text">
+                    Відправна точка курсу з математики
+                    Тільки основна інформація з прикладами
+                    та зображеннями. Почнемо!
+                </p>
+            </li>
+            <li class="time-line__item">
+                <h6 class="time-line__title">Основи алгебри</h6>
+                <p class="time-line__text">
+                    Відправна точка курсу з математики
+                    Тільки основна інформація з прикладами
+                    та зображеннями. Почнемо!
+                    Більше тексту, бла-бла-бла-бла-бла!
+                </p>
+            </li>
+        </ul>
+    </div>
+
+
+</main>

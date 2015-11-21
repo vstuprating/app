@@ -1,6 +1,7 @@
 @import variable
 
 .main
+    @extend .clearfix
     margin-left: $menuW
 
 .row
@@ -8,12 +9,13 @@
 
 .title
     margin-bottom: 20px
+    margin-left: -10px
     color: #1b2428
     font-family: ProximaNovaBold
     font-size: 27px
 
 .main-card
-    padding: 30px 50px
+    padding: 30px 50px 30px 60px
     box-sizing: border-box
     float: left
 
@@ -61,12 +63,18 @@
     border-radius: 3px
 
     > span
+        @extend .animate
         position: absolute
         top: 0
         left: 0
         bottom: 0
+        width: 0
         background-color: #29b1f0
         border-radius: 3px
+
+    &--pink
+        > span
+            background-color: #ee7d8f
 
     &--large
         height: 20px
@@ -80,12 +88,16 @@
 
 .search
     width: 100 / 1110 * 670%
+    float: right
     padding: 30px 50px 30px 50px
+
+    + .search
+        padding-top: 0
+        margin-top: -25px
 
 .search__row
     @extend .clearfix
     margin: 0 -100 / 670 * 15% 15px
-    padding-left: 10px
 
     .col-2
         width: 100 / 670 * 300%
@@ -104,6 +116,8 @@
     padding: 5px 0
     color: #1b2428
     font-size: 18px
+    box-sizing: border-box
+    border-radius: 0
 
     border-bottom: 1px solid #c5c5c5
 
@@ -117,14 +131,16 @@
         color: #1b2428
 
     &--min
-        width: 100 / 264 * 46%
-        margin-right: 100 / 264 * 10
-        color: #c5c5c5
+        @extend .is-button
+        width: 16%
+        float: left
+        margin-right: 4%
         text-align: center
+        color: #1b2328
         font-size: 18px
 
         &:last-child
-            margin-left: 0
+            margin-right: 0
 
         &::-webkit-input-placeholder
             color: #c5c5c5
@@ -161,24 +177,154 @@
 
 
 
-.btn
-    min-width: 265px
-    height: 32px
-    margin: 0 auto
-    padding: 0 10px
-    display: block
+.list
+    &--progress
+        .list__item
+            padding: 0
+        
+        .list__item__in
+            width: 100 / 582 * 347%
+            float: left
+
+        .list__item__text
+            padding-right: 30px
+            margin: 0
+
+        .list-rating
+            width: 100 / 582 * 211%
+            margin-top: 15px
+            float: right
+
+.list__item
+    position: relative
+    padding-right: 156px
+
+.list__item__in
+    position: relative
+
+.list__item__text
+    margin-right: 70px
+    
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+    color: #4a5464
+    line-height: 35px
+
+    font-size: 15px
+    text-decoration: underline
+
+.list__value
+    position: absolute
+    top: 0
+    right: 0
+
+    line-height: 35px
+    font-size: 12px
+    font-family: ProximaNovaBold
+
+.list__item__btn
+    position: absolute
+    top: 0
+    right: 0
+
+
+.section-title
+    color: #4a5464
+    font-family: ProximaNovaBold
+    font-size: 23px
+
+
+.time-line
+    position: relative
+    padding: 48px 0 25px
+
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 50%
+        width: 4px
+        margin-left: -2px
+        background-color: #ebf1f5
+
+.time-line__item
+    position: relative
+    left: 19px
+    width: 50%
+    margin-left: 50%
+    margin-bottom: 43px
+    padding: 15px 23px
     box-sizing: border-box
 
-    background-color: #31b573
-    border-radius: 3px
+    color: #4a5464
+    font-size: 18px
+    line-height: 29px
 
-    color: #fff
-    font-family: ProximaNovaLight
-    font-size: 12px
-    line-height: 32px
+    &:before
+        content: ''
+        position: absolute
+        top: 17px
+        left: -32px
+        width: 16px
+        height: 16px
+        background-color: #fff
+        border: 3px solid #67087b
+        border-radius: 50%
 
-    &--primaty
-        background-color: #29b1f0
+    &.is-start
+        border: 1px solid #67087b
 
-    &--middle
-        min-width: 192px
+    &.is-completed
+        color: #fefefe
+        background-image: linear-gradient(to top, #380643 0%, #7b218f 100%)
+        border: 1px solid #67087b
+
+        &:before
+            background-color: #67087b
+
+        &:after
+            content: ''
+            position: absolute
+            top: 41px
+            left: -23px
+            height: 100%
+            width: 3px
+            padding-top: 18px
+            background-color: #67087b
+
+    &:nth-of-type(2n)
+        left: -19px
+        margin-left: 0
+        text-align: right
+
+        &:before
+            left: auto
+            right: -30px
+
+        &:after
+            left: auto
+            right: -21px
+
+        .time-line__status
+            right: auto
+            left: 23px
+
+        .time-line__title
+            padding-left: 23px
+            padding-right: 0
+
+.time-line__status
+    position: absolute
+    top: 17px
+    right: 23px
+
+.time-line__title
+    padding-right: 45px
+    font-size: 18px
+    font-family: ProximaNovaBold
+
+//.time-line__text
+

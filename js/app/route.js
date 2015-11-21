@@ -3,22 +3,40 @@
 angular.module('vstupApp.route', [])
 
     .config(function ($stateProvider, $urlRouterProvider) {
-         $urlRouterProvider.otherwise('/');
+         $urlRouterProvider.otherwise('/search');
 
          $stateProvider
-             .state('search', {
+             .state('page', {
                  url: '/',
+                 abstract: true,
                  views: {
                      header: {
                          templateUrl: 'template/header.html'
                      },
                      menu: {
                          templateUrl: 'template/menu.html'
-                     },
-                     '@': {
-                         templateUrl: 'template/search.html'
                      }
                  }
+             })
+
+                .state('page.search', {
+                     url: 'search',
+                     views: {
+                         '@': {
+                             controller: 'searchCtrl',
+                             templateUrl: 'template/search.html'
+                         }
+                     }
+                })
+
+                .state('page.cabinet', {
+                    url: 'cabinet',
+                    views: {
+                        '@': {
+                            controller: 'cabinetCtrl',
+                            templateUrl: 'template/cabinet.html'
+                        }
+                    }
              })
 
             ;
