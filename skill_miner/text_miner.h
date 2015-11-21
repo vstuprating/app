@@ -9,7 +9,6 @@
 #define TEXT_MINER_H_
 
 
-//#include <vector>
 
 #include "storage/storage.h"
 #include "classifier/classifier.h"
