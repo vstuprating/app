@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 #include "storage.h"
 
 
@@ -6,7 +7,15 @@
 void Storage::addCateg(const std::string& categName)
 {
 	std::cout << "addCateg working..." << std::endl;
-	_storage[categName] = std::set<std::string>();
+	if( _storage.find(categName) == _storage.end() )
+	{
+		_storage[categName] = std::set<std::string>();
+	}
+	else
+	{
+		throw std::runtime_error("This category is already exist.");
+	}
+
 }
 
 

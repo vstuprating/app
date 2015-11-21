@@ -29,7 +29,7 @@ public:
 	void removeCategory(const std::string& categName);
 
 	/* fileName - file should contain categories and words for each category */
-	void addDictionary(const std::string& fileName);
+	void openDictionary(const std::string& fileName);
 
 private:
 

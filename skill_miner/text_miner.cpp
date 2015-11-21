@@ -1,5 +1,6 @@
 #include <stdexcept>
 #include <iostream>
+#include <cassert>
 
 #include "text_miner.h"
 
@@ -35,6 +36,11 @@ const std::vector<ranged_list> TextMiner::process(const std::string& fileName) c
 
 void TextMiner::addCategory(const std::string& categName, const unsigned int classifierType)
 {
+	_storage.addCateg(categName);
+
+
+	assert( (classifierType >= 0) && (classifierType <= 1) );
+
 	switch(classifierType)
 	{
 		case 0:
@@ -63,11 +69,19 @@ void TextMiner::addCategory(const std::string& categName, const unsigned int cla
 void TextMiner::removeCategory(const std::string& categName)
 {
 	std::cout << "removeCategory working..." << std::endl;
+	_storage.removeCateg( categName );
 }
 
 
 
-void TextMiner::addDictionary(const std::string& fileName)
+void TextMiner::openDictionary(const std::string& fileName)
 {
 	std::cout << "TextMiner::addDictionary working..." << std::endl;
+//	_storage.add
 }
+
+
+
+
+
+

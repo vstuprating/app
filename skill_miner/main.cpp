@@ -10,7 +10,9 @@ const std::string FW = "Frameworks";
 const std::string EX = "Experience";
 const std::string OT = "Other tools";
 
-
+const std::string text_text = "We are looking for a programmer with strong C++, "
+							  "good understanding of multithreading, and good English "
+							  "to join Uplay PC Kiev team.";
 
 
 int main(int argc, char** argv)
@@ -26,7 +28,7 @@ int main(int argc, char** argv)
 		app.addCategory(FW, cl_standart);
 		app.addCategory(EX, cl_standart);
 		app.addCategory(OT, cl_exp);
-		app.addDictionary("Dictionary.json");
+		app.openDictionary("Dictionary.json");
 
 		app.removeCategory(OT);
 
@@ -56,6 +58,13 @@ int main(int argc, char** argv)
 		std::cout << st.getWordCateg("Borya") << std::endl;
 
 
+		/*
+		 * Test for StandartClassifier
+		 */
+		Classifier* clf = new StandartClassifier();
+		clf->process(text_text, st);
+
+		delete clf;
 
 	}
 	catch (std::exception& e)
