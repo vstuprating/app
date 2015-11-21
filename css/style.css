@@ -15,12 +15,8 @@ output, ruby, section, summary, time, mark, audio, video {
 
 /* line 14, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 body, html {
-  height: 100%;
-  min-width: 100%;
   min-height: 100%;
   line-height: 1;
-  text-rendering: auto;
-  overflow: hidden;
   text-size-adjust: none;
   -webkit-tap-highlight-color: transparent;
   tap-highlight-color: transparent;
@@ -34,31 +30,31 @@ body, html {
   font-family: 'ProximaNova', Arial, sans-serif;
 }
 
-/* line 47, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 41, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
   display: block;
 }
 
-/* line 50, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 44, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 audio, canvas, progress, video {
   display: inline-block;
   vertical-align: baseline;
 }
 
-/* line 54, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 48, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 58, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 52, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 img,
 fieldset,
 a img {
   border: none;
 }
 
-/* line 63, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 57, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 img {
   max-width: 100%;
   width: 100%;
@@ -66,47 +62,47 @@ img {
   vertical-align: middle;
 }
 
-/* line 69, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 63, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 svg {
   vertical-align: middle;
 }
 
-/* line 72, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 66, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 svg > path {
   transition: fill 0.5s ease;
 }
 
-/* line 75, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 69, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 79, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 73, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 a:active, a:hover {
   outline: 0;
   text-decoration: none;
 }
 
-/* line 84, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 78, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 input[type="submit"],
 button {
   cursor: pointer;
 }
 
-/* line 87, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 81, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 input[type="submit"]::-moz-focus-inner,
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 91, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 85, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 textarea {
   overflow: auto;
 }
 
-/* line 94, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 88, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 input, button {
   margin: 0;
   padding: 0;
@@ -114,24 +110,24 @@ input, button {
   border: 0;
 }
 
-/* line 100, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 94, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 input,
 textarea {
   resize: none;
   user-select: text;
 }
 
-/* line 105, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 99, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 input {
   -webkit-appearance: button;
 }
 
-/* line 109, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 103, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-/* line 113, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 107, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -139,37 +135,37 @@ select:-webkit-autofill {
   color: #000 !important;
 }
 
-/* line 119, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 113, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 input, textarea, select, button,
 h1, h2, h3, h4, h5, h6, a, span, a:focus {
   outline: none;
 }
 
-/* line 123, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 117, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 ul {
   list-style-type: none;
 }
 
-/* line 126, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 120, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 table {
   width: 100%;
   border-spacing: 0;
   border-collapse: collapse;
 }
 
-/* line 131, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 125, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 td, th {
   padding: 0;
   vertical-align: middle;
 }
 
-/* line 135, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 129, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
 
-/* line 139, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+/* line 133, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
 label {
   cursor: pointer;
 }
@@ -193,7 +189,7 @@ label {
 }
 
 /* line 3, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
-.clearfix:after, .row:after, .search__row:after {
+.clearfix:after, .main:after, .row:after, .search__row:after {
   content: ' ';
   width: 0;
   height: 0;
@@ -255,7 +251,7 @@ label {
 }
 
 /* line 53, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
-.is-button, .result-test__item__name, .search__field {
+.is-button, .select-box > select, .result-test__item__name, .search__field, .search__field--min {
   background: none;
   border: 0;
   -webkit-appearance: button;
@@ -282,7 +278,7 @@ label {
 }
 
 /* line 2, /Users/MiKolka/Documents/Project/vstuprating/sass/_animate.sass */
-.animate, body, html {
+.animate, .rating > span {
   transition: all 0.5s ease;
 }
 
@@ -371,12 +367,12 @@ body.ngdialog-open {
 /* line 5, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header {
   position: relative;
+  z-index: 1;
   height: 120px;
-  padding-left: 190px;
   background-color: #314047;
 }
 
-/* line 11, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 12, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header:after {
   content: '';
   position: absolute;
@@ -386,17 +382,18 @@ body.ngdialog-open {
   box-shadow: 0 -18px 5px 15px rgba(49, 64, 71, 0.8);
 }
 
-/* line 19, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 20, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header__rate-box {
   position: relative;
   max-width: 100%;
   height: 120px;
   margin-right: 260px;
+  padding-left: 25px;
   overflow-x: auto;
   white-space: nowrap;
 }
 
-/* line 29, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 31, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header-col {
   margin-top: 22px;
   margin-right: 35px;
@@ -404,50 +401,50 @@ body.ngdialog-open {
   color: #919191;
 }
 
-/* line 37, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 39, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header__rate {
   position: relative;
   margin: 0;
-  padding: 0 25px;
+  padding: 0 15px;
   display: inline-block;
   vertical-align: middle;
   color: #fffffd;
   font-size: 63px;
 }
 
-/* line 46, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 48, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header__rate:before {
   content: '';
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -10px;
   margin-top: -7px;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
   border-bottom: 12px solid #31b573;
 }
 
-/* line 57, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 59, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header__rate--down:before {
   border-bottom: 0;
   border-top: 12px solid #d82323;
 }
 
-/* line 62, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 64, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header__vnz {
   display: inline-block;
   vertical-align: middle;
   font-size: 16px;
 }
 
-/* line 67, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 69, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header__subject {
   margin-top: 10px;
   text-align: center;
   font-size: 13px;
 }
 
-/* line 73, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 75, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header__user {
   position: absolute;
   top: 50%;
@@ -455,13 +452,13 @@ body.ngdialog-open {
   transform: translate(0, -50%);
 }
 
-/* line 80, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 82, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .user__box {
   display: inline-block;
   margin-left: 40px;
 }
 
-/* line 84, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 86, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header__user__img {
   width: 51px;
   height: 51px;
@@ -472,7 +469,7 @@ body.ngdialog-open {
   background-position: 50%;
 }
 
-/* line 95, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 97, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .user__name {
   margin-right: 34px;
   display: inline-block;
@@ -481,7 +478,7 @@ body.ngdialog-open {
   font-size: 13px;
 }
 
-/* line 102, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+/* line 104, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
 .header__notify {
   width: 21px;
   height: 22px;
@@ -492,12 +489,12 @@ body.ngdialog-open {
 
 /* line 1, /Users/MiKolka/Documents/Project/vstuprating/sass/_menu.sass */
 .menu {
-  position: absolute;
-  top: 120px;
+  position: fixed;
+  top: 0;
   left: 0;
   bottom: 0;
   width: 165px;
-  padding-top: 65px;
+  padding-top: 185px;
   padding-left: 25px;
   background-color: #273339;
 }
@@ -516,223 +513,7 @@ body.ngdialog-open {
   text-decoration: underline;
 }
 
-/* line 3, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.main {
-  margin-left: 190px;
-}
-
-/* line 9, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.title {
-  margin-bottom: 20px;
-  color: #1b2428;
-  font-family: ProximaNovaBold;
-  font-size: 27px;
-}
-
-/* line 15, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.main-card {
-  padding: 30px 50px;
-  box-sizing: border-box;
-  float: left;
-}
-
-/* line 20, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.result {
-  width: 39.63964%;
-  background: #ecf1f5;
-}
-
-/* line 26, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.result-test__item {
-  margin-bottom: 28px;
-  padding-left: 3%;
-  font-size: 0;
-}
-
-/* line 31, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.result-test__item__in {
-  width: 65%;
-  display: inline-block;
-  vertical-align: bottom;
-}
-
-/* line 36, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.result-test__item__name {
-  width: 100%;
-  margin-bottom: 10px;
-  color: #1b2428;
-  font-size: 17px;
-}
-
-/* line 44, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.result-test__item__val {
-  position: relative;
-  top: 3px;
-  width: 35%;
-  margin-right: -50px;
-  display: inline-block;
-  padding-left: 8.63636%;
-  color: #1b2428;
-  font-size: 37px;
-  vertical-align: bottom;
-}
-
-/* line 55, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.rating {
-  position: relative;
-  width: 100%;
-  height: 7px;
-  overflow: hidden;
-  background-color: #d2d2d2;
-  border-radius: 3px;
-}
-
-/* line 63, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.rating > span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background-color: #29b1f0;
-  border-radius: 3px;
-}
-
-/* line 71, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.rating--large {
-  height: 20px;
-  background-color: #e1e1e1;
-  border-radius: 10px;
-}
-
-/* line 76, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.rating--large > span {
-  background-color: #31b573;
-  border-radius: 10px;
-}
-
-/* line 81, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search {
-  width: 60.36036%;
-  padding: 30px 50px 30px 50px;
-}
-
-/* line 85, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__row {
-  margin: 0 -2.23881% 15px;
-  padding-left: 10px;
-}
-
-/* line 90, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__row .col-2 {
-  width: 44.77612%;
-  margin: 0 2.23881%;
-  float: left;
-}
-
-/* line 95, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__label {
-  display: block;
-  color: #c5c5c5;
-  font-size: 12px;
-}
-
-/* line 101, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__field {
-  width: 100%;
-  padding: 5px 0;
-  color: #1b2428;
-  font-size: 18px;
-  border-bottom: 1px solid #c5c5c5;
-}
-
-/* line 110, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__field::-webkit-input-placeholder {
-  color: #1b2428;
-}
-
-/* line 112, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__field::-moz-placeholder {
-  color: #1b2428;
-}
-
-/* line 114, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__field:-moz-placeholder {
-  color: #1b2428;
-}
-
-/* line 116, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__field:-ms-input-placeholder {
-  color: #1b2428;
-}
-
-/* line 119, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__field--min {
-  width: 17.42424%;
-  margin-right: 3.78788;
-  color: #c5c5c5;
-  text-align: center;
-  font-size: 18px;
-}
-
-/* line 126, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__field--min:last-child {
-  margin-left: 0;
-}
-
-/* line 129, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__field--min::-webkit-input-placeholder {
-  color: #c5c5c5;
-}
-
-/* line 131, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__field--min::-moz-placeholder {
-  color: #c5c5c5;
-}
-
-/* line 133, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__field--min:-moz-placeholder {
-  color: #c5c5c5;
-}
-
-/* line 135, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.search__field--min:-ms-input-placeholder {
-  color: #c5c5c5;
-}
-
-/* line 140, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.result-search {
-  margin: 45px 28px;
-}
-
-/* line 144, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.result-search tbody > tr {
-  border-bottom: 1px solid #eaeaea;
-}
-
-/* line 147, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.result-search th {
-  padding: 0 10px 10px 10px;
-  text-align: left;
-  color: #1b2428;
-  font-size: 15px;
-}
-
-/* line 153, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.result-search td {
-  padding: 20px 10px;
-}
-
-/* line 156, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.result-search td a {
-  color: #29b1f0;
-}
-
-/* line 159, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
-.result-search td a:hover {
-  text-decoration: underline;
-}
-
-/* line 164, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 4, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
 .btn {
   min-width: 265px;
   height: 32px;
@@ -748,12 +529,488 @@ body.ngdialog-open {
   line-height: 32px;
 }
 
-/* line 180, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 20, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
 .btn--primaty {
   background-color: #29b1f0;
 }
 
-/* line 183, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 23, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
 .btn--middle {
   min-width: 192px;
+}
+
+/* line 26, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
+.btn--min {
+  min-width: 130px;
+}
+
+/* line 29, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
+.btn.is-success {
+  color: #31b573;
+  background-color: #fff;
+  border: 1px solid #31b573;
+}
+
+/* line 34, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
+.btn--full {
+  width: 100%;
+}
+
+/* line 41, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
+.select-box {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 45, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
+.select-box:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 15px;
+  height: 10px;
+  margin-top: -5px;
+  background: url("../pic/down-big.png") no-repeat;
+  pointer-events: none;
+}
+
+/* line 56, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
+.select-box:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 20px;
+  border-bottom: 1px solid #4a5464;
+}
+
+/* line 64, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
+.select-box > select {
+  padding-right: 20px;
+  color: #4a5464;
+  font-family: ProximaNovaBold;
+  font-size: 23px;
+}
+
+/* line 3, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.main {
+  margin-left: 190px;
+}
+
+/* line 10, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.title {
+  margin-bottom: 20px;
+  margin-left: -10px;
+  color: #1b2428;
+  font-family: ProximaNovaBold;
+  font-size: 27px;
+}
+
+/* line 17, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.main-card {
+  padding: 30px 50px 30px 60px;
+  box-sizing: border-box;
+  float: left;
+}
+
+/* line 22, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result {
+  width: 39.63964%;
+  background: #ecf1f5;
+}
+
+/* line 28, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-test__item {
+  margin-bottom: 28px;
+  padding-left: 3%;
+  font-size: 0;
+}
+
+/* line 33, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-test__item__in {
+  width: 65%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* line 38, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-test__item__name {
+  width: 100%;
+  margin-bottom: 10px;
+  color: #1b2428;
+  font-size: 17px;
+}
+
+/* line 46, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-test__item__val {
+  position: relative;
+  top: 3px;
+  width: 35%;
+  margin-right: -50px;
+  display: inline-block;
+  padding-left: 8.63636%;
+  color: #1b2428;
+  font-size: 37px;
+  vertical-align: bottom;
+}
+
+/* line 57, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.rating {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  background-color: #d2d2d2;
+  border-radius: 3px;
+}
+
+/* line 65, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.rating > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: #29b1f0;
+  border-radius: 3px;
+}
+
+/* line 76, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.rating--pink > span {
+  background-color: #ee7d8f;
+}
+
+/* line 79, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.rating--large {
+  height: 20px;
+  background-color: #e1e1e1;
+  border-radius: 10px;
+}
+
+/* line 84, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.rating--large > span {
+  background-color: #31b573;
+  border-radius: 10px;
+}
+
+/* line 89, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search {
+  width: 60.36036%;
+  float: right;
+  padding: 30px 50px 30px 50px;
+}
+
+/* line 94, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search + .search {
+  padding-top: 0;
+  margin-top: -25px;
+}
+
+/* line 98, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__row {
+  margin: 0 -2.23881% 15px;
+}
+
+/* line 102, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__row .col-2 {
+  width: 44.77612%;
+  margin: 0 2.23881%;
+  float: left;
+}
+
+/* line 107, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__label {
+  display: block;
+  color: #c5c5c5;
+  font-size: 12px;
+}
+
+/* line 113, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field {
+  width: 100%;
+  padding: 5px 0;
+  color: #1b2428;
+  font-size: 18px;
+  box-sizing: border-box;
+  border-radius: 0;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+/* line 124, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field::-webkit-input-placeholder {
+  color: #1b2428;
+}
+
+/* line 126, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field::-moz-placeholder {
+  color: #1b2428;
+}
+
+/* line 128, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field:-moz-placeholder {
+  color: #1b2428;
+}
+
+/* line 130, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field:-ms-input-placeholder {
+  color: #1b2428;
+}
+
+/* line 133, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min {
+  width: 16%;
+  float: left;
+  margin-right: 4%;
+  text-align: center;
+  color: #1b2328;
+  font-size: 18px;
+}
+
+/* line 142, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min:last-child {
+  margin-right: 0;
+}
+
+/* line 145, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min::-webkit-input-placeholder {
+  color: #c5c5c5;
+}
+
+/* line 147, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min::-moz-placeholder {
+  color: #c5c5c5;
+}
+
+/* line 149, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min:-moz-placeholder {
+  color: #c5c5c5;
+}
+
+/* line 151, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min:-ms-input-placeholder {
+  color: #c5c5c5;
+}
+
+/* line 156, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search {
+  margin: 45px 28px;
+}
+
+/* line 160, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search tbody > tr {
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* line 163, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search th {
+  padding: 0 10px 10px 10px;
+  text-align: left;
+  color: #1b2428;
+  font-size: 15px;
+}
+
+/* line 169, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search td {
+  padding: 20px 10px;
+}
+
+/* line 172, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search td a {
+  color: #29b1f0;
+}
+
+/* line 175, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search td a:hover {
+  text-decoration: underline;
+}
+
+/* line 182, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.list--progress .list__item {
+  padding: 0;
+}
+
+/* line 185, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.list--progress .list__item__in {
+  width: 59.62199%;
+  float: left;
+}
+
+/* line 189, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.list--progress .list__item__text {
+  padding-right: 30px;
+  margin: 0;
+}
+
+/* line 193, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.list--progress .list-rating {
+  width: 36.2543%;
+  margin-top: 15px;
+  float: right;
+}
+
+/* line 198, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.list__item {
+  position: relative;
+  padding-right: 156px;
+}
+
+/* line 202, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.list__item__in {
+  position: relative;
+}
+
+/* line 205, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.list__item__text {
+  margin-right: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #4a5464;
+  line-height: 35px;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+/* line 218, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.list__value {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 35px;
+  font-size: 12px;
+  font-family: ProximaNovaBold;
+}
+
+/* line 227, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.list__item__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 233, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.section-title {
+  color: #4a5464;
+  font-family: ProximaNovaBold;
+  font-size: 23px;
+}
+
+/* line 239, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line {
+  position: relative;
+  padding: 48px 0 25px;
+}
+
+/* line 243, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  margin-left: -2px;
+  background-color: #ebf1f5;
+}
+
+/* line 253, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__item {
+  position: relative;
+  left: 19px;
+  width: 50%;
+  margin-left: 50%;
+  margin-bottom: 43px;
+  padding: 15px 23px;
+  box-sizing: border-box;
+  color: #4a5464;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+/* line 266, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__item:before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: -32px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 3px solid #67087b;
+  border-radius: 50%;
+}
+
+/* line 277, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__item.is-start {
+  border: 1px solid #67087b;
+}
+
+/* line 280, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__item.is-completed {
+  color: #fefefe;
+  background-image: linear-gradient(to top, #380643 0%, #7b218f 100%);
+  border: 1px solid #67087b;
+}
+
+/* line 285, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__item.is-completed:before {
+  background-color: #67087b;
+}
+
+/* line 288, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__item.is-completed:after {
+  content: '';
+  position: absolute;
+  top: 41px;
+  left: -23px;
+  height: 100%;
+  width: 3px;
+  padding-top: 18px;
+  background-color: #67087b;
+}
+
+/* line 298, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__item:nth-of-type(2n) {
+  left: -19px;
+  margin-left: 0;
+  text-align: right;
+}
+
+/* line 303, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__item:nth-of-type(2n):before {
+  left: auto;
+  right: -30px;
+}
+
+/* line 307, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__item:nth-of-type(2n):after {
+  left: auto;
+  right: -21px;
+}
+
+/* line 311, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__item:nth-of-type(2n) .time-line__status {
+  right: auto;
+  left: 23px;
+}
+
+/* line 315, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__item:nth-of-type(2n) .time-line__title {
+  padding-left: 23px;
+  padding-right: 0;
+}
+
+/* line 319, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__status {
+  position: absolute;
+  top: 17px;
+  right: 23px;
+}
+
+/* line 324, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-line__title {
+  padding-right: 45px;
+  font-size: 18px;
+  font-family: ProximaNovaBold;
 }

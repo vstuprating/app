@@ -9,4 +9,8 @@ angular.module('vstupApp', [
     //, 'vstupApp.run'
     //, 'vstupApp.config'
     , 'vstupApp.route'
+
+    , 'vstupApp.directives'
+    , 'vstupApp.ctrl.search'
+    , 'vstupApp.ctrl.cabinet'
 ]);
