@@ -13,7 +13,7 @@
     font-size: 27px
 
 .main-card
-    padding: 30px 40px
+    padding: 30px 50px
     box-sizing: border-box
     float: left
 
@@ -29,17 +29,23 @@
     font-size: 0
 
 .result-test__item__in
-    width: 100 / 440 * 211%
+    width: 65%
     display: inline-block
     vertical-align: bottom
 
 .result-test__item__name
+    width: 100%
+    @extend .is-button
     margin-bottom: 10px
+
     color: #1b2428
     font-size: 17px
 
 .result-test__item__val
+    position: relative
+    top: 3px
     width: 40%
+    margin-right: -50px
     display: inline-block
     padding-left: 100 / 440 * 38%
     color: #1b2428
@@ -98,9 +104,6 @@
     padding: 5px 0
     color: #1b2428
     font-size: 18px
-
-    background: none
-    border: 0
 
     border-bottom: 1px solid #c5c5c5
 
