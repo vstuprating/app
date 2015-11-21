@@ -1,0 +1,94 @@
+/************************************************************************************
+ * Modal window
+ *************************************************************************************/
+@import "variable"
+
+$wModal: 992
+$wModalPercent: 100 / 992
+
+
+.ngdialog
+    @extend .el-full
+    position: fixed
+    overflow: auto
+    z-index: 10000
+    -webkit-overflow-scrolling: touch
+
+    //&.ngdialog-disabled-animation
+        animation: none !important
+
+        .ngdialog-overlay,
+        .ngdialog-content
+            animation: none !important
+
+    //&.pause
+    //    .ngdialog-content
+    //        animation-delay: 0.5s
+    //
+    //    .contacts-info
+    //        animation-delay: 0.5s
+    //
+    //        &:after
+    //            animation-delay: 0.5s
+
+
+.ngdialog-overlay
+    @extend .el-full
+    position: fixed
+    background: rgba(0, 0, 0, 0.4)
+    -webkit-backface-visibility: hidden
+    animation: fadein 0.5s
+
+.ngdialog-no-overlay
+    > .ngdialog-content
+        pointer-events: all
+
+.ngdialog-content
+    position: absolute
+    width: 100%
+    height: 100%
+    overflow: hidden
+    -webkit-backface-visibility: hidden
+    animation: fadein 0.5s
+    pointer-events: none
+
+.ngdialog.ngdialog-closing
+    > .ngdialog-content
+        -webkit-backface-visibility: hidden
+        animation: fadeout 0.5s
+
+    > .ngdialog-overlay
+        -webkit-backface-visibility: hidden
+        animation: fadeout 0.5s
+
+    &.open-contacts-info
+        .contacts-info
+            animation: move-top 0.5s
+
+            &:after
+                animation: fadeout 0.5s
+
+    //&.open-contacts-info
+        //> .ngdialog-content
+            animation: fadein 0s
+
+            > .contacts-info:after
+                animation: fadein 0s
+        //.visible-name
+            .contacts-info
+                top: 35px
+
+body.ngdialog-open
+    overflow: hidden
+
+    //.page
+        -webkit-filter: blur(2px)
+        filter: blur(2px)
+
+
+.ngdialog.ngdialog-theme-default
+    &.ngdialog-closing .ngdialog-content
+        animation: flyout .5s
+    .ngdialog-content
+        animation: flyin .5s
+

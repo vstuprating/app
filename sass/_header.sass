@@ -1,0 +1,108 @@
+@import variable
+
+$rateBoxR: 260px
+
+.header
+    position: relative
+    height: 120px
+    padding-left: $menuW
+    background-color: #314047
+
+    &:after
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        right: $rateBoxR
+        box-shadow: 0 -18px 5px 15px rgba(#314047, 0.8)
+
+.header__rate-box
+    position: relative
+    @extend .no-scroll-bar
+    max-width: 100%
+    height: 120px
+    margin-right: $rateBoxR
+
+    overflow-x: auto
+    white-space: nowrap
+
+.header-col
+    margin-top: 22px
+    margin-right: 35px
+    display: inline-block
+    color: #919191
+
+.header-col__box
+
+.header__rate
+    position: relative
+    margin: 0
+    padding: 0 25px
+    display: inline-block
+    vertical-align: middle
+    color: #fffffd
+    font-size: 63px
+
+    &:before
+        content: ''
+        position: absolute
+        top: 50%
+        left: 0
+        margin-top: -7px
+        border-left: 9px solid transparent
+        border-right: 9px solid transparent
+        border-bottom: 12px solid #31b573
+
+    &--down
+        &:before
+            border-bottom: 0
+            border-top: 12px solid #d82323
+
+
+.header__vnz
+    display: inline-block
+    vertical-align: middle
+    font-size: 16px
+
+.header__subject
+    margin-top: 10px
+    text-align: center
+    font-size: 13px
+
+
+.header__user
+    position: absolute
+    top: 50px
+    right: 23px
+
+    transform: translate(0, -50%)
+
+.user__box
+    display: inline-block
+    margin-left: 40px
+
+.header__user__img
+    width: 51px
+    height: 51px
+    display: inline-block
+    vertical-align: middle
+
+    background:
+        repeat: no-repeat
+        size: cover
+        position: 50%
+
+.user__name
+    margin-right: 34px
+    display: inline-block
+    vertical-align: middle
+    color: #eaeaea
+    font-size: 13px
+
+.header__notify
+    width: 21px
+    height: 22px
+    display: inline-block
+    vertical-align: middle
+
+    background-image: url(../pic/notify.png)

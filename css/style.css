@@ -1,0 +1,746 @@
+/* line 1, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* line 14, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+body, html {
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  line-height: 1;
+  text-rendering: auto;
+  overflow: hidden;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -ms-touch-action: none;
+  -webkit-touch-callout: none;
+  touch-action: none;
+  speak: none;
+  font-family: 'ProximaNova', Arial, sans-serif;
+}
+
+/* line 47, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block;
+}
+
+/* line 50, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 54, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 58, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+img,
+fieldset,
+a img {
+  border: none;
+}
+
+/* line 63, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* line 69, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+svg {
+  vertical-align: middle;
+}
+
+/* line 72, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+svg > path {
+  transition: fill 0.5s ease;
+}
+
+/* line 75, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 79, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+a:active, a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+/* line 84, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+/* line 87, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 91, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+textarea {
+  overflow: auto;
+}
+
+/* line 94, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+input, button {
+  margin: 0;
+  padding: 0;
+  background: 0;
+  border: 0;
+}
+
+/* line 100, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+input,
+textarea {
+  resize: none;
+  user-select: text;
+}
+
+/* line 105, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+input {
+  -webkit-appearance: button;
+}
+
+/* line 109, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* line 113, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+/* line 119, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+/* line 123, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+ul {
+  list-style-type: none;
+}
+
+/* line 126, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* line 131, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+td, th {
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* line 135, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 139, /Users/MiKolka/Documents/Project/vstuprating/sass/_reset.sass */
+label {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.svg#ProximaNova") format("svg");
+}
+
+@font-face {
+  font-family: "ProximaNovaLight";
+  src: url("../fonts/ProximaNova-Light/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light/ProximaNova-Light.ttf") format("truetype"), url("../fonts/ProximaNova-Light/ProximaNova-Light.svg#ProximaNova") format("svg");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Reg/ProximaNova-Reg.eot");
+  src: url("../fonts/ProximaNova-Reg/ProximaNova-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Reg/ProximaNova-Reg.woff") format("woff"), url("../fonts/ProximaNova-Reg/ProximaNova-Reg.ttf") format("truetype"), url("../fonts/ProximaNova-Reg/ProximaNova-Reg.svg#ProximaNova") format("svg");
+}
+
+/* line 3, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.clearfix:after, .row:after, .search__row:after {
+  content: ' ';
+  width: 0;
+  height: 0;
+  display: table;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+/* line 14, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.page {
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+/* line 19, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 28, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.is-scroll-y {
+  overflow-y: scroll;
+}
+
+/* line 33, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.drop-zone-active .is-drop-zone {
+  border-color: #8ab71f;
+}
+
+/* line 37, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.d-none {
+  display: none;
+}
+
+/* line 41, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.no-overflow {
+  overflow: visible !important;
+}
+
+/* line 44, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.no-scroll-bar, .header__rate-box {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+/* line 48, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.no-scroll-bar::-webkit-scrollbar, .header__rate-box::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+/* line 53, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.is-button {
+  -webkit-appearance: button;
+}
+
+/* line 56, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.el-full, .ngdialog, .ngdialog-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 64, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
+.pos-rel {
+  position: relative !important;
+}
+
+/* line 2, /Users/MiKolka/Documents/Project/vstuprating/sass/_animate.sass */
+.animate, body, html {
+  transition: all 0.5s ease;
+}
+
+/* line 5, /Users/MiKolka/Documents/Project/vstuprating/sass/_animate.sass */
+.animate-transform {
+  transition: transform 0.5s ease;
+}
+
+/* line 8, /Users/MiKolka/Documents/Project/vstuprating/sass/_animate.sass */
+.animate-opacity {
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/************************************************************************************
+ * Modal window
+ *************************************************************************************/
+/* line 10, /Users/MiKolka/Documents/Project/vstuprating/sass/_modal.sass */
+.ngdialog {
+  position: fixed;
+  overflow: auto;
+  z-index: 10000;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 35, /Users/MiKolka/Documents/Project/vstuprating/sass/_modal.sass */
+.ngdialog-overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backface-visibility: hidden;
+  animation: fadein 0.5s;
+}
+
+/* line 43, /Users/MiKolka/Documents/Project/vstuprating/sass/_modal.sass */
+.ngdialog-no-overlay > .ngdialog-content {
+  pointer-events: all;
+}
+
+/* line 46, /Users/MiKolka/Documents/Project/vstuprating/sass/_modal.sass */
+.ngdialog-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  animation: fadein 0.5s;
+  pointer-events: none;
+}
+
+/* line 56, /Users/MiKolka/Documents/Project/vstuprating/sass/_modal.sass */
+.ngdialog.ngdialog-closing > .ngdialog-content {
+  -webkit-backface-visibility: hidden;
+  animation: fadeout 0.5s;
+}
+
+/* line 60, /Users/MiKolka/Documents/Project/vstuprating/sass/_modal.sass */
+.ngdialog.ngdialog-closing > .ngdialog-overlay {
+  -webkit-backface-visibility: hidden;
+  animation: fadeout 0.5s;
+}
+
+/* line 65, /Users/MiKolka/Documents/Project/vstuprating/sass/_modal.sass */
+.ngdialog.ngdialog-closing.open-contacts-info .contacts-info {
+  animation: move-top 0.5s;
+}
+
+/* line 68, /Users/MiKolka/Documents/Project/vstuprating/sass/_modal.sass */
+.ngdialog.ngdialog-closing.open-contacts-info .contacts-info:after {
+  animation: fadeout 0.5s;
+}
+
+/* line 81, /Users/MiKolka/Documents/Project/vstuprating/sass/_modal.sass */
+body.ngdialog-open {
+  overflow: hidden;
+}
+
+/* line 90, /Users/MiKolka/Documents/Project/vstuprating/sass/_modal.sass */
+.ngdialog.ngdialog-theme-default.ngdialog-closing .ngdialog-content {
+  animation: flyout .5s;
+}
+
+/* line 92, /Users/MiKolka/Documents/Project/vstuprating/sass/_modal.sass */
+.ngdialog.ngdialog-theme-default .ngdialog-content {
+  animation: flyin .5s;
+}
+
+/* line 5, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header {
+  position: relative;
+  height: 120px;
+  padding-left: 190px;
+  background-color: #314047;
+}
+
+/* line 11, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 260px;
+  box-shadow: 0 -18px 5px 15px rgba(49, 64, 71, 0.8);
+}
+
+/* line 19, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header__rate-box {
+  position: relative;
+  max-width: 100%;
+  height: 120px;
+  margin-right: 260px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* line 29, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header-col {
+  margin-top: 22px;
+  margin-right: 35px;
+  display: inline-block;
+  color: #919191;
+}
+
+/* line 37, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header__rate {
+  position: relative;
+  margin: 0;
+  padding: 0 25px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fffffd;
+  font-size: 63px;
+}
+
+/* line 46, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header__rate:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -7px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 12px solid #31b573;
+}
+
+/* line 57, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header__rate--down:before {
+  border-bottom: 0;
+  border-top: 12px solid #d82323;
+}
+
+/* line 62, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header__vnz {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+/* line 67, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header__subject {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* line 73, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header__user {
+  position: absolute;
+  top: 50px;
+  right: 23px;
+  transform: translate(0, -50%);
+}
+
+/* line 80, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.user__box {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+/* line 84, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header__user__img {
+  width: 51px;
+  height: 51px;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+/* line 95, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.user__name {
+  margin-right: 34px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #eaeaea;
+  font-size: 13px;
+}
+
+/* line 102, /Users/MiKolka/Documents/Project/vstuprating/sass/_header.sass */
+.header__notify {
+  width: 21px;
+  height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../pic/notify.png);
+}
+
+/* line 1, /Users/MiKolka/Documents/Project/vstuprating/sass/_menu.sass */
+.menu {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  bottom: 0;
+  width: 165px;
+  padding-top: 65px;
+  padding-left: 25px;
+  background-color: #273339;
+}
+
+/* line 13, /Users/MiKolka/Documents/Project/vstuprating/sass/_menu.sass */
+.menu__item {
+  display: block;
+  margin-bottom: 18px;
+  color: #eaeaea;
+  font-family: ProximaNovaBold;
+  font-size: 13px;
+}
+
+/* line 21, /Users/MiKolka/Documents/Project/vstuprating/sass/_menu.sass */
+.menu__item:hover, .menu__item.is-active {
+  text-decoration: underline;
+}
+
+/* line 3, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.main {
+  margin-left: 190px;
+}
+
+/* line 9, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.title {
+  margin-bottom: 20px;
+  color: #1b2428;
+  font-family: ProximaNovaBold;
+  font-size: 27px;
+}
+
+/* line 15, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.main-card {
+  padding: 30px 40px;
+  box-sizing: border-box;
+  float: left;
+}
+
+/* line 20, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result {
+  width: 46.36364%;
+  background: #ecf1f5;
+}
+
+/* line 26, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-test__item {
+  margin-bottom: 28px;
+  padding-left: 3%;
+  font-size: 0;
+}
+
+/* line 31, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-test__item__in {
+  width: 46.06987%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* line 36, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-test__item__name {
+  margin-bottom: 10px;
+  color: #1b2428;
+  font-size: 17px;
+}
+
+/* line 41, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-test__item__val {
+  width: 40%;
+  display: inline-block;
+  padding-left: 8.29694%;
+  color: #1b2428;
+  font-size: 37px;
+  vertical-align: bottom;
+}
+
+/* line 49, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.rating {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  background-color: #d2d2d2;
+  border-radius: 3px;
+}
+
+/* line 57, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.rating > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #29b1f0;
+  border-radius: 3px;
+}
+
+/* line 65, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.rating--large {
+  height: 20px;
+  background-color: #e1e1e1;
+  border-radius: 10px;
+}
+
+/* line 70, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.rating--large > span {
+  background-color: #31b573;
+  border-radius: 10px;
+}
+
+/* line 75, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search {
+  width: 53.63636%;
+  padding: 30px 50px 30px 40px;
+}
+
+/* line 79, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__row {
+  margin: 0 -2.67857% 15px;
+}
+
+/* line 83, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__row .col-2 {
+  width: 44.64286%;
+  margin: 0 2.67857%;
+  float: left;
+}
+
+/* line 88, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__label {
+  display: block;
+  color: #c5c5c5;
+  font-size: 12px;
+}
+
+/* line 94, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field {
+  width: 100%;
+  padding: 5px 0;
+  color: #1b2428;
+  font-size: 18px;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+/* line 102, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field::-webkit-input-placeholder {
+  color: #1b2428;
+}
+
+/* line 104, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field::-moz-placeholder {
+  color: #1b2428;
+}
+
+/* line 106, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field:-moz-placeholder {
+  color: #1b2428;
+}
+
+/* line 108, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field:-ms-input-placeholder {
+  color: #1b2428;
+}
+
+/* line 111, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min {
+  width: 17.42424%;
+  margin-right: 3.78788;
+  color: #c5c5c5;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* line 118, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min:last-child {
+  margin-left: 0;
+}
+
+/* line 121, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min::-webkit-input-placeholder {
+  color: #c5c5c5;
+}
+
+/* line 123, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min::-moz-placeholder {
+  color: #c5c5c5;
+}
+
+/* line 125, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min:-moz-placeholder {
+  color: #c5c5c5;
+}
+
+/* line 127, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.search__field--min:-ms-input-placeholder {
+  color: #c5c5c5;
+}
+
+/* line 132, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search {
+  margin: 45px 28px;
+}
+
+/* line 136, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search tbody > tr {
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* line 139, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search th {
+  padding: 0 10px 10px 10px;
+  text-align: left;
+  color: #1b2428;
+  font-size: 15px;
+}
+
+/* line 145, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search td {
+  padding: 20px 10px;
+}
+
+/* line 148, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search td a {
+  color: #29b1f0;
+}
+
+/* line 151, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.result-search td a:hover {
+  text-decoration: underline;
+}
+
+/* line 156, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.btn {
+  min-width: 265px;
+  height: 32px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: block;
+  box-sizing: border-box;
+  background-color: #31b573;
+  border-radius: 3px;
+  color: #fff;
+  font-family: ProximaNovaLight;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+/* line 172, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.btn--primaty {
+  background-color: #29b1f0;
+}
+
+/* line 175, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.btn--middle {
+  min-width: 192px;
+}
