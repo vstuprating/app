@@ -9,7 +9,7 @@ TextMiner::TextMiner(const unsigned int classifiersNumber)
 {
 	_classifiers.assign(classifiersNumber, NULL);
 
-	std::cout << "TextMiner() working..." << std::endl;
+//	std::cout << "TextMiner() working..." << std::endl;
 }
 
 
@@ -21,15 +21,15 @@ TextMiner::~TextMiner()
 			delete _classifiers[i];
 	}
 
-	std::cout << "~TextMiner() working..." << std::endl;
+//	std::cout << "~TextMiner() working..." << std::endl;
 }
 
 
 const std::vector<ranged_list> TextMiner::process(const std::string& fileName) const
 {
-	const std::vector<ranged_list> moc_vec(1, _classifiers[0]->process("Text for processing", _storage) );
+	const std::vector<ranged_list> moc_vec(1, _classifiers[0]->process("Programming languages", "Text for processing", _storage) );
 
-	std::cout << "TextMiner::process working..." << std::endl;
+//	std::cout << "TextMiner::process working..." << std::endl;
 	return moc_vec;
 }
 
@@ -60,7 +60,7 @@ void TextMiner::addCategory(const std::string& categName, const unsigned int cla
 
 	}
 
-	std::cout << "TextMiner::addCategory working..." << std::endl;
+//	std::cout << "TextMiner::addCategory working..." << std::endl;
 }
 
 
@@ -68,7 +68,7 @@ void TextMiner::addCategory(const std::string& categName, const unsigned int cla
 
 void TextMiner::removeCategory(const std::string& categName)
 {
-	std::cout << "removeCategory working..." << std::endl;
+//	std::cout << "removeCategory working..." << std::endl;
 	_storage.removeCateg( categName );
 }
 
@@ -76,7 +76,7 @@ void TextMiner::removeCategory(const std::string& categName)
 
 void TextMiner::openDictionary(const std::string& fileName)
 {
-	std::cout << "TextMiner::addDictionary working..." << std::endl;
+//	std::cout << "TextMiner::addDictionary working..." << std::endl;
 //	_storage.add
 }
 

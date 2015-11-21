@@ -6,7 +6,7 @@
 
 void Storage::addCateg(const std::string& categName)
 {
-	std::cout << "addCateg working..." << std::endl;
+//	std::cout << "addCateg working..." << std::endl;
 	if( _storage.find(categName) == _storage.end() )
 	{
 		_storage[categName] = std::set<std::string>();
@@ -22,7 +22,7 @@ void Storage::addCateg(const std::string& categName)
 
 void Storage::removeCateg(const std::string& categName)
 {
-	std::cout << "removeCateg working..." << std::endl;
+//	std::cout << "removeCateg working..." << std::endl;
 	if( _storage.find(categName) != _storage.end() )
 	{
 		_storage.erase(categName);
@@ -37,7 +37,7 @@ void Storage::removeCateg(const std::string& categName)
 
 void Storage::addWordInCateg(const std::string& word, const std::string& categName)
 {
-	std::cout << "addWordInCateg working..." << std::endl;
+//	std::cout << "addWordInCateg working..." << std::endl;
 	if( _storage.find(categName) != _storage.end() )
 	{
 		_storage[categName].insert( word );
@@ -51,7 +51,7 @@ void Storage::addWordInCateg(const std::string& word, const std::string& categNa
 
 void Storage::removeWordFromCateg(const std::string& word, const std::string& categName)
 {
-	std::cout << "removeWordFromCateg working..." << std::endl;
+//	std::cout << "removeWordFromCateg working..." << std::endl;
 	if( _storage.find(categName) != _storage.end() )
 	{
 		_storage[categName].erase( word );
@@ -66,7 +66,7 @@ void Storage::removeWordFromCateg(const std::string& word, const std::string& ca
 
 const std::string Storage::getWordCateg(const std::string& word) const
 {
-	std::cout << "getWordCateg working..." << std::endl;
+//	std::cout << "getWordCateg working..." << std::endl;
 
 	std::map<std::string, std::set<std::string> >::const_iterator map_iter = _storage.begin();
 
@@ -91,7 +91,7 @@ const std::string Storage::getWordCateg(const std::string& word) const
 
 const std::vector<std::string> Storage::getCategList() const
 {
-	std::cout << "getCategList working..." << std::endl;
+//	std::cout << "getCategList working..." << std::endl;
 
 	std::vector<std::string> res( _storage.size(), std::string() );
 	std::map<std::string, std::set<std::string> >::const_iterator map_iter = _storage.begin();
@@ -107,7 +107,7 @@ const std::vector<std::string> Storage::getCategList() const
 
 const std::map<std::string, std::set<std::string> > Storage::getStorage() const
 {
-	std::cout << "getStorage working..." << std::endl;
+//	std::cout << "getStorage working..." << std::endl;
 
 	return _storage;
 }

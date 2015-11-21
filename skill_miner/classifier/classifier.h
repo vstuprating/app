@@ -30,7 +30,7 @@ class Classifier
 {
 public:
 
-	virtual const ranged_list process(const std::string& text, const Storage& storage) const = 0;
+	virtual const ranged_list process(const std::string& categ, const std::string& text, const Storage& storage) const = 0;
 	virtual ~Classifier(){}
 };
 
@@ -43,7 +43,7 @@ class StandartClassifier: public Classifier
 {
 public:
 
-	const ranged_list process(const std::string& text, const Storage& storage) const;
+	const ranged_list process(const std::string& categ, const std::string& text, const Storage& storage) const;
 
 private:
 
@@ -55,7 +55,7 @@ class ExperienceClassifier: public Classifier
 {
 public:
 
-	const ranged_list process(const std::string& text, const Storage& storage) const;
+	const ranged_list process(const std::string& categ, const std::string& text, const Storage& storage) const;
 
 private:
 
