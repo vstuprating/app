@@ -189,7 +189,7 @@ label {
 }
 
 /* line 3, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
-.clearfix:after, .main:after, .row:after, .search__row:after {
+.clearfix:after, .main:after, .row:after, .search__row:after, .time-line:after {
   content: ' ';
   width: 0;
   height: 0;
@@ -900,9 +900,10 @@ body.ngdialog-open {
 .time-line {
   position: relative;
   padding: 48px 0 25px;
+  margin: 0px -50px 0 -60px;
 }
 
-/* line 243, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 245, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line:before {
   content: '';
   position: absolute;
@@ -914,13 +915,14 @@ body.ngdialog-open {
   background-color: #ebf1f5;
 }
 
-/* line 253, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 255, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__item {
   position: relative;
   left: 19px;
-  width: 50%;
+  width: 38%;
   margin-left: 50%;
   margin-bottom: 43px;
+  float: left;
   padding: 15px 23px;
   box-sizing: border-box;
   color: #4a5464;
@@ -928,7 +930,7 @@ body.ngdialog-open {
   line-height: 29px;
 }
 
-/* line 266, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 269, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__item:before {
   content: '';
   position: absolute;
@@ -941,24 +943,24 @@ body.ngdialog-open {
   border-radius: 50%;
 }
 
-/* line 277, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 280, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__item.is-start {
   border: 1px solid #67087b;
 }
 
-/* line 280, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 283, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__item.is-completed {
   color: #fefefe;
   background-image: linear-gradient(to top, #380643 0%, #7b218f 100%);
   border: 1px solid #67087b;
 }
 
-/* line 285, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 288, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__item.is-completed:before {
   background-color: #67087b;
 }
 
-/* line 288, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 291, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__item.is-completed:after {
   content: '';
   position: absolute;
@@ -970,45 +972,46 @@ body.ngdialog-open {
   background-color: #67087b;
 }
 
-/* line 298, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 301, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__item:nth-of-type(2n) {
   left: -19px;
-  margin-left: 0;
+  margin-right: 50%;
+  float: right;
   text-align: right;
 }
 
-/* line 303, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 307, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__item:nth-of-type(2n):before {
   left: auto;
   right: -30px;
 }
 
-/* line 307, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 311, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__item:nth-of-type(2n):after {
   left: auto;
   right: -21px;
 }
 
-/* line 311, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 315, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__item:nth-of-type(2n) .time-line__status {
   right: auto;
   left: 23px;
 }
 
-/* line 315, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 319, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__item:nth-of-type(2n) .time-line__title {
   padding-left: 23px;
   padding-right: 0;
 }
 
-/* line 319, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 323, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__status {
   position: absolute;
   top: 17px;
   right: 23px;
 }
 
-/* line 324, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 328, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-line__title {
   padding-right: 45px;
   font-size: 18px;
