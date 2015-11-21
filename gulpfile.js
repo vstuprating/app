@@ -57,13 +57,14 @@ gulp.task('index', function () {
             gulp.src(
                 bowerFiles(),
                 {base: './bower_components' },
-                {read: false}),
-                {name: 'bower'}
+                {read: false}
+            ),
+            {name: 'bower', relative: true}
         )
     )
         .pipe(inject(
             gulp.src(js.app.src).pipe(angularFilesort()),
-            {name: js.app.name}
+            {name: js.app.name, relative: true}
         )
     )
         .pipe(gulp.dest('./'))
