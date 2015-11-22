@@ -22,42 +22,42 @@ angular.module('vstupApp.ctrl.goal', []).
 
         $scope.map = [
             {
-                name: 'Basic',
+                name: 'HTML',
                 list: []
             },
             {
-                name: 'Pascal',
+                name: 'CSS',
+                list: []
+            },
+            {
+                name: 'JavaScript',
                 list: [
                     {
-                        name: 'Паскаль - это просто!',
-                        course: 'Coursera',
+                        name: 'JavaScript Road Trip',
+                        course: 'codeschool',
                         success: true
                     },
                     {
-                        name: 'Pascal Has Never Been That Ez',
-                        course: 'Udemy',
+                        name: 'jQuery',
+                        course: 'codeschool',
                         success: true
                     },
                     {
-                        name: 'Lets learn Pascal',
-                        course: 'Prometheus'
+                        name: 'Angular JS',
+                        course: 'codeschool'
                     },
                     {
-                        name: 'Pascal Crash Course 101',
-                        course: 'edX'
+                        name: 'Reactjs',
+                        course: 'hexlet'
                     }
                 ]
             },
             {
-                name: 'Алгоритмiзацiя',
+                name: 'PHP',
                 list: []
             },
             {
-                name: 'C++',
-                list: []
-            },
-            {
-                name: 'Патерни',
+                name: 'MySQL',
                 list: []
             }
         ]
