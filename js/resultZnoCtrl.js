@@ -31,6 +31,11 @@ angular.module('vstupApp.ctrl.resultZno', []).
             updateData();
         };
 
+
+        $scope.updateData = function () {
+            updateData();
+        };
+
         function updateData () {
             if ($scope.s)
                 $scope.s.meanBall = summ($scope.choseZno);

@@ -19,7 +19,7 @@ angular.module('vstupApp.ctrl.search', []).
                 });
         };
 
-        $scope.changeParamsSearch = function (id) {
+        $scope.changeParamsSearch = function () {
             var sUniversity = {
                 idCity: $scope.s.idCity,
                 idBranch: $scope.s.idBranch

@@ -43,6 +43,7 @@ angular.module('vstupApp.route', [])
                     url: 'goal',
                     views: {
                         '@': {
+                            controller: 'goalCtrl',
                             templateUrl: 'template/goal.html'
                         }
                     }

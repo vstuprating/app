@@ -14,6 +14,7 @@ angular.module('vstupApp', [
     , 'vstupApp.ctrl.app'
     , 'vstupApp.ctrl.search'
     , 'vstupApp.ctrl.cabinet'
+    , 'vstupApp.ctrl.goal'
     , 'vstupApp.ctrl.resultZno'
 ]);
 

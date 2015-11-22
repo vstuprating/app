@@ -39,42 +39,25 @@
             Як мені цьому навчитись?
         </h3>
 
-        <section ng-switch="steps">
+        <section>
             <ul class="time-step">
-                <li class="time-step__item step-1"
-                    ng-class="{'is-active': steps === 'Bas'}"
-                    ng-click="steps = 'Bas'">Basic</li>
-                <li class="time-step__item step-2"
-                    ng-class="{'is-active': steps === 'Pas'}"
-                    ng-click="steps = 'Pas'">Pascal</li>
-                <li class="time-step__item step-3"
-                    ng-class="{'is-active': steps === 'Alg'}"
-                    ng-click="steps = 'Alg'">Алгоритмiзацiя</li>
-                <li class="time-step__item step-4"
-                    ng-class="{'is-active': steps === 'C'}"
-                    ng-click="steps = 'C'">C++</li>
-                <li class="time-step__item step-5"
-                    ng-class="{'is-active': steps === 'Pat'}"
-                    ng-click="steps = 'Pat'">Патерни</li>
+                <li class="time-step__item step-{{$index + 1}}"
+                    ng-repeat="item in map track by $index"
+                    ng-class="{'is-active': step === item.name}"
+                    ng-click="setStep(item.name)"
+                    ng-bind="item.name"></li>
             </ul>
 
-            <table class="time-step-table" ng-switch-when="Pas">
+            <table class="time-step-table"
+                   ng-repeat="m in map track by $index"
+                   ng-if="m.list[0]"
+                   ng-show="step === m.name">
                 <tbody>
-                    <tr class="is-success">
-                        <td>Паскаль - это просто!</td>
-                        <td class="circle">Coursera</td>
-                    </tr>
-                    <tr class="is-success">
-                        <td>Pascal Has Never Been That Ez</td>
-                        <td class="circle">Udemy</td>
-                    </tr>
-                    <tr>
-                        <td>Lets learn Pascal</td>
-                        <td class="circle">Prometheus</td>
-                    </tr>
-                    <tr>
-                        <td>Pascal Crash Course 101</td>
-                        <td class="circle">edX</td>
+                    <tr ng-repeat="item in m.list track by $index"
+                        ng-class="{'is-success': item.success}"
+                        ng-click="item.success = !item.success">
+                        <td ng-bind="::item.name"></td>
+                        <td class="circle" ng-bind="::item.course"></td>
                     </tr>
                 </tbody>
             </table>

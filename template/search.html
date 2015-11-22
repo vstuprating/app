@@ -11,7 +11,9 @@
                     ng-repeat="item in choseZno track by $index"
                     ng-class="{'is-active': item.active}">
                     <div class="result-test__item__in">
-                        <select class="result-test__item__name" ng-model="s.city">
+                        <select class="result-test__item__name"
+                                ng-model="item.name"
+                                ng-change="updateData()">
                             <option ng-repeat="s in zno track by $index"
                                     ng-value="s.name"
                                     ng-bind="s.name"
@@ -148,7 +150,7 @@
                         <td ng-bind="item.VNZ"></td>
                         <td ng-bind="item.direction"></td>
                         <td ng-bind-html="getHTML(item.faculty)"></td>
-                        <td>
+                        <!--<td>-->
                             <span class="c-green">3</span>/75/20
                             <!--minBall: "114"-->
                         </td>

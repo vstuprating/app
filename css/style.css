@@ -1194,22 +1194,27 @@ input:disabled {
 }
 
 /* line 461, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+.time-step-table tr {
+  cursor: pointer;
+}
+
+/* line 463, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-step-table tr.is-success {
   color: #d6d6d6;
 }
 
-/* line 465, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 467, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .time-step-table tr.is-success .circle:after {
   background-color: #31b573;
 }
 
-/* line 468, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 470, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .circle {
   position: relative;
   padding-right: 75px;
 }
 
-/* line 472, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
+/* line 474, /Users/MiKolka/Documents/Project/vstuprating/sass/_main.sass */
 .circle:after {
   content: '';
   position: absolute;
