@@ -1,0 +1,7 @@
+dictionary/experience.txt
+dictionary/operating_systems.txt
+dictionary/frameworks.txt
+dictionary/degree.txt
+dictionary/foreign_languages.txt
+dictionary/programming_languages.txt
+dictionary/other_tools.txt

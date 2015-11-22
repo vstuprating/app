@@ -17,18 +17,33 @@ void show_frequency_vector_m(const ranged_list& vstrings)
 
 
 
-const std::string PL = "Programming languages";
-const std::string FW = "Frameworks";
-const std::string EX = "Experience";
-const std::string OT = "Other tools";
+const std::string PL = "programming_languages";
+const std::string FW = "frameworks";
+const std::string EX = "experience";
+const std::string OT = "other_tools";
+const std::string OS = "operating_systems";
+const std::string FL = "foreign_languages";
+const std::string DG = "degree";
 
-const std::string text_text = "with English strong Boost Boost Boost C++, "
-							  "of multithreading, G French, STL STL and good English "
-							  "to join Uplay PC Kiev team.STL STL STL, Boost Django Django C++ Java C++ C# Python Python C++";
+
+
+
+
+
+
+
+
+
 
 
 int main(int argc, char** argv)
 {
+	if(argc != 3)
+	{
+		std::cerr << "Invalid arguments..." << std::endl;
+		return 1;
+	}
+
 	try
 	{
 
@@ -39,34 +54,41 @@ int main(int argc, char** argv)
 		app.addCategory(PL, cl_standart);
 		app.addCategory(FW, cl_standart);
 		app.addCategory(EX, cl_standart);
-		app.addCategory(OT, cl_exp);
-		app.openDictionary("Dictionary.json");
+		app.addCategory(OT, cl_standart);
+		app.addCategory(OS, cl_standart);
+		app.addCategory(FL, cl_standart);
+		app.addCategory(DG, cl_standart);
+
+		app.openDictionary(argv[2]);
 
 		app.removeCategory(OT);
 
-		app.process("input_file.json");
-
+		const std::vector<ranged_list> vec = app.process(argv[1]);
+		for(unsigned int i=0; i < vec.size(); i++)
+		{
+			std::cout << "[ "; show_frequency_vector_m(vec[i]); std::cout << "]" << std::endl;
+		}
 
 
 		/*
 		 * Tests for Storage - success
 		 */
-		Storage st;
-		st.addCateg(PL);
-		st.addCateg(FW);
-		st.addCateg(EX);
-		st.addCateg(OT);
-//		st.removeCateg(OT);
-		st.addWordInCateg("Java", PL);
-		st.addWordInCateg("C++", PL);
-		st.addWordInCateg("C#", PL);
-		st.addWordInCateg("Pascal", PL);
-		st.addWordInCateg("Python",PL);
-		st.addWordInCateg("English", OT);
-		st.addWordInCateg("French", OT);
-		st.addWordInCateg("Boost", FW);
-		st.addWordInCateg("Django", FW);
-		st.addWordInCateg("STL", FW);
+//		Storage st;
+//		st.addCateg(PL);
+//		st.addCateg(FW);
+//		st.addCateg(EX);
+//		st.addCateg(OT);
+////		st.removeCateg(OT);
+//		st.addWordInCateg("Java", PL);
+//		st.addWordInCateg("C++", PL);
+//		st.addWordInCateg("C#", PL);
+//		st.addWordInCateg("Pascal", PL);
+//		st.addWordInCateg("Python",PL);
+//		st.addWordInCateg("English", OT);
+//		st.addWordInCateg("French", OT);
+//		st.addWordInCateg("Boost", FW);
+//		st.addWordInCateg("Django", FW);
+//		st.addWordInCateg("STL", FW);
 
 //		st.removeWordFromCateg("Pascal", PL);
 
@@ -79,15 +101,17 @@ int main(int argc, char** argv)
 
 
 		/*
-		 * Test for StandartClassifier
+		 * Test for StandartClassifier - success
 		 */
-		Classifier* clf = new StandartClassifier();
-		std::cout << std::endl;
-		std::cout << PL << ": [ "; show_frequency_vector_m( clf->process(PL, text_text, st) ); std::cout << "]" << std::endl;
-		std::cout << OT << ": [ "; show_frequency_vector_m( clf->process(OT, text_text, st) ); std::cout << "]" << std::endl;
-		std::cout << FW << ": [ "; show_frequency_vector_m( clf->process(FW, text_text, st) ); std::cout << "]" << std::endl;
-		std::cout << std::endl;
-		delete clf;
+//		Classifier* clf = new StandartClassifier();
+//		std::cout << std::endl;
+//		std::cout << PL << ": [ "; show_frequency_vector_m( clf->process(PL, text_text, st) ); std::cout << "]" << std::endl;
+//		std::cout << OT << ": [ "; show_frequency_vector_m( clf->process(OT, text_text, st) ); std::cout << "]" << std::endl;
+//		std::cout << FW << ": [ "; show_frequency_vector_m( clf->process(FW, text_text, st) ); std::cout << "]" << std::endl;
+//		std::cout << std::endl;
+//		delete clf;
+
+
 
 	}
 	catch (std::exception& e)

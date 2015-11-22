@@ -20,10 +20,11 @@ class TextMiner
 {
 public:
 
-	TextMiner(const unsigned int classifiersNumber = 2);
+	TextMiner(const unsigned int classifiersNumber = 1);
 	~TextMiner();
 
 	const std::vector<ranged_list> process(const std::string& fileName) const;
+
 
 	void addCategory(const std::string& categName, const unsigned int classifierType);
 	void removeCategory(const std::string& categName);

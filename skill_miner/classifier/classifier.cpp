@@ -101,6 +101,7 @@ const ranged_list StandartClassifier::process(const std::string& categ, const st
 //				std::cout << "INDEX: " << indx << std::endl;
 //				std::cout << "SIZE: " << frequency_vector.size() << std::endl;
 //				std::cout << "DATA: " << frequency_vector[indx].second << std::endl;
+
 				frequency_vector[indx].second++; // HERE IS A BUG!!!
 			}
 			else
@@ -127,10 +128,6 @@ const ranged_list StandartClassifier::process(const std::string& categ, const st
 }
 
 
-
-
-
-
 const ranged_list ExperienceClassifier::process(const std::string& categ, const std::string& text, const Storage& storage) const
 {
 	const std::string moc_string = "experience_classifier";
@@ -145,6 +142,6 @@ const ranged_list ExperienceClassifier::process(const std::string& categ, const 
 
 //	show_vector(vstrings);
 
-
+//TODO
 	return moc_vector;
 }
