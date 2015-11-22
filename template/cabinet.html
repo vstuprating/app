@@ -3,11 +3,13 @@
 
     <div class="row">
 
-        <section class="result main-card">
+        <section class="result main-card" ng-controller="resultZnoCtrl">
             <h4 class="title">Результати тестування</h4>
 
             <ul class="result-test">
-                <li class="result-test__item" ng-repeat="item in choseZno track by $index">
+                <li class="result-test__item"
+                    ng-repeat="item in choseZno track by $index"
+                    ng-class="{'is-active': item.active}">
                     <div class="result-test__item__in">
                         <select class="result-test__item__name" ng-model="s.city">
                             <option ng-repeat="s in zno track by $index"
@@ -23,8 +25,11 @@
                            type="number"
                            ng-value="item.value"
                            ng-model="item.value"
+                           ng-disabled="!item.active"
                            ng-blur="successInput(item)"
-                    />
+                            />
+                    <i class="result-test__item__del"
+                       ng-click="diactiveChoseZno(item)"></i>
                 </li>
             </ul>
 
@@ -144,7 +149,7 @@
             </li>
             <li class="time-line__item is-completed">
                 <h6 class="time-line__title">
-                    <span class="time-line__status">1/30</span>
+                    <span class="time-line__status">2/30</span>
                     Основи алгебри
                 </h6>
                 <p class="time-line__text">
@@ -155,7 +160,10 @@
                 </p>
             </li>
             <li class="time-line__item is-start">
-                <h6 class="time-line__title">Основи алгебри</h6>
+                <h6 class="time-line__title">
+                    <span class="time-line__status">3/30</span>
+                    Основи алгебри
+                </h6>
                 <p class="time-line__text">
                     Відправна точка курсу з математики
                     Тільки основна інформація з прикладами
