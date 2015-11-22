@@ -7,12 +7,15 @@
             <h4 class="title">Результати тестування</h4>
 
             <ul class="result-test">
-                <li class="result-test__item" ng-repeat="item in subjects track by $index">
+                <li class="result-test__item" ng-repeat="item in choseZno track by $index">
                     <div class="result-test__item__in">
-                        <select class="result-test__item__name">
-                            <option value="" ng-bind="item.name"></option>
+                        <select class="result-test__item__name" ng-model="s.city">
+                            <option ng-repeat="s in zno track by $index"
+                                    ng-value="s.name"
+                                    ng-bind="s.name"
+                                    ng-selected="s.name === item.name"></option>
                         </select>
-                        <figure class="rating rating--pink">
+                        <figure class="rating">
                             <span ng-style="{width: item.value - 100 + '%'}"></span>
                         </figure>
                     </div>

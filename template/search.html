@@ -7,10 +7,13 @@
             <h4 class="title">Результати тестування</h4>
 
             <ul class="result-test">
-                <li class="result-test__item" ng-repeat="item in subjects track by $index">
+                <li class="result-test__item" ng-repeat="item in choseZno track by $index">
                     <div class="result-test__item__in">
-                        <select class="result-test__item__name">
-                            <option value="" ng-bind="item.name"></option>
+                        <select class="result-test__item__name" ng-model="s.city">
+                            <option ng-repeat="s in zno track by $index"
+                                    ng-value="s.name"
+                                    ng-bind="s.name"
+                                    ng-selected="s.name === item.name"></option>
                         </select>
                         <figure class="rating">
                             <span ng-style="{width: item.value - 100 + '%'}"></span>
@@ -37,8 +40,10 @@
             <div class="search__row">
                 <div class="col-2">
                     <label class="search__label">Регіон</label>
-                    <select class="search__field">
-                        <option>Харківська обл.</option>
+                    <select class="search__field" ng-model="s.idCity">
+                        <option ng-repeat="item in cities track by $index"
+                                ng-value="item.idCity"
+                                ng-bind="item.name"></option>
                     </select>
                 </div>
                 <div class="col-2">
@@ -52,23 +57,30 @@
             <div class="search__row">
                 <div class="col-2">
                     <label class="search__label">Напрям</label>
-                    <select class="search__field">
-                        <option>Філологія</option>
+                    <select class="search__field" ng-model="s.idDirection">
+                        <option ng-repeat="item in directions track by $index"
+                                ng-value="item.idDirection"
+                                ng-bind="item.name"></option>
                     </select>
                 </div>
                 <div class="col-2">
                     <label class="search__label">ВНЗ</label>
-                    <select class="search__field">
-                        <option>Будь який</option>
+                    <select class="search__field" ng-model="s.idUniversity">
+                        <!--<option>Будь який</option>-->
+                        <option ng-repeat="item in university track by $index"
+                                ng-value="item.idUniversity"
+                                ng-bind="item.title"></option>
                     </select>
                 </div>
             </div>
 
             <div class="search__row">
                 <div class="col-2">
-                    <label class="search__label">Напрям</label>
-                    <select class="search__field">
-                        <option>Гуманітарні науки</option>
+                    <label class="search__label">Галузь науки</label>
+                    <select class="search__field" ng-model="s.idBranch">
+                        <option ng-repeat="item in branches track by $index"
+                                ng-value="item.idBranch"
+                                ng-bind="item.name"></option>
                     </select>
                 </div>
             </div>
@@ -78,7 +90,8 @@
                     <label class="search__label">Набрані бали (атестат, екзамен, МАН)</label>
                     <input class="search__field search__field--min"
                            type="number"
-                           placeholder="ЗНО"/>
+                           placeholder="ЗНО"
+                           ng-model="s.meanBall"/>
                     <input class="search__field search__field--min"
                            type="number"
                            placeholder="C"/>
@@ -96,7 +109,7 @@
 
             <br/>
 
-            <button class="btn btn--full">Підтвердити</button>
+            <button class="btn btn--full" ng-click="startSearch()">Підтвердити</button>
 
         </section>
 
@@ -116,14 +129,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr ng-repeat="item in chances track by $index">
+                        <td ng-bind="item.VNZ"></td>
+                        <td ng-bind="item.direction"></td>
+                        <td ng-bind="item.faculty"></td>
                         <td>
-                            <a href="">НПУ ім. М.П. Драгоманова</a>
+                            <span class="c-green">3</span>/75/20
+                            <!--minBall: "114"-->
                         </td>
-                        <td>соціальна робота</td>
-                        <td>Інститут соціальної роботи та управління</td>
-                        <td>
-                            <span class="c-green">3</span>/75/20</td>
                         <td>
                             <figure class="rating rating--large">
                                 <span style="width: 76%"></span>

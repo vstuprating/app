@@ -1,29 +1,34 @@
 
 angular.module('vstupApp.ctrl.search', []).
-    controller('searchCtrl', function ($scope) {
+    controller('searchCtrl', function ($scope, $http) {
 
-        $scope.subjects = [
+        $scope.choseZno = [
             {
-                name: 'Українська мова',
-                value: 150
+                name: 'Українська мова і література',
+                value: 100
             }
         ];
 
+
         $scope.addSubject = function () {
-            $scope.subjects.push({
+            //_.filter($scope.subjects, function (item) {
+            //    return item.name =
+            //});
+
+            $scope.choseZno.push({
                 value: 100
             });
         };
 
-        $scope.successInput = function (item) {
-            var b;
+        $scope.startSearch = function () {
+            console.log($scope.s);
 
-            if      (item.value > 200) b = 200;
-            else if (item.value < 100) b = 100;
-            else    return false;
-
-            return item.value = b;
-        };
+            $http.get('http://web.prolaby.com/api/get/chance', {params: $scope.s})
+                .success(function (data) {
+                    $scope.chances = data;
+                    console.log('chance', data);
+                });
+        }
 
     });
 

@@ -11,6 +11,7 @@ angular.module('vstupApp', [
     , 'vstupApp.route'
 
     , 'vstupApp.directives'
+    , 'vstupApp.ctrl.app'
     , 'vstupApp.ctrl.search'
     , 'vstupApp.ctrl.cabinet'
 ]);
