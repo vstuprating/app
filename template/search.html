@@ -66,11 +66,13 @@
 
             <div class="search__row">
                 <div class="col-2">
-                    <label class="search__label">Напрям</label>
-                    <select class="search__field" ng-model="s.idDirection">
-                        <option value="">Всі напрями</option>
-                        <option ng-repeat="item in directions track by $index"
-                                ng-value="item.idDirection"
+                    <label class="search__label">Галузь науки</label>
+                    <select class="search__field"
+                            ng-change="changeParamsSearch()"
+                            ng-model="s.idBranch">
+                        <option value="">Всі галузі</option>
+                        <option ng-repeat="item in branches track by $index"
+                                ng-value="item.idBranch"
                                 ng-bind="item.name"></option>
                     </select>
                 </div>
@@ -89,13 +91,11 @@
 
             <div class="search__row">
                 <div class="col-2">
-                    <label class="search__label">Галузь науки</label>
-                    <select class="search__field"
-                            ng-change="changeParamsSearch()"
-                            ng-model="s.idBranch">
-                        <option value="">Всі галузі</option>
-                        <option ng-repeat="item in branches track by $index"
-                                ng-value="item.idBranch"
+                    <label class="search__label">Напрям</label>
+                    <select class="search__field" ng-model="s.idDirection">
+                        <option value="">Всі напрями</option>
+                        <option ng-repeat="item in directions track by $index"
+                                ng-value="item.idDirection"
                                 ng-bind="item.name"></option>
                     </select>
                 </div>
@@ -141,7 +141,7 @@
                         <th>ВНЗ</th>
                         <th>Напрям</th>
                         <th>Факультет</th>
-                        <th>ПМ/ВМ/БМ</th>
+                        <!--<th>ПМ/ВМ/БМ</th>-->
                         <th>Вірогідність вступу</th>
                     </tr>
                 </thead>
@@ -151,9 +151,9 @@
                         <td ng-bind="item.direction"></td>
                         <td ng-bind-html="getHTML(item.faculty)"></td>
                         <!--<td>-->
-                            <span class="c-green">3</span>/75/20
+                            <!--<span class="c-green">3</span>/75/20-->
                             <!--minBall: "114"-->
-                        </td>
+                        <!--</td>-->
                         <td>
                             <figure class="rating rating--large">
                                 <span ng-style="{width: s.meanBall - item.minBall + '%'}"></span>

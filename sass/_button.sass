@@ -63,16 +63,22 @@ input
         right: 20px
         border-bottom: 1px solid #4a5464
 
-    > select
+    > select, input, span
         @extend .is-button
+        display: inline-block
+        min-width: 190px
         padding-right: 20px
+        text-align: left
 
         color: #4a5464
         font-family: ProximaNovaBold
         font-size: 23px
 
+    span
+        -webkit-appearance: none !important
+
     &--large
-        > select
+        > select, input, span
             color: #4a5464
             font-family: ProximaNovaLight
             font-size: 31px

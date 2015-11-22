@@ -12,13 +12,12 @@
         <h3 class="goal-title">
             Я хочу стати
             <label class="select-box select-box--large">
-                <select>
-                    <option value="математики" selected>програмістом</option>
-                </select>
+                <span contenteditable="true" ng-keydown="setSpec($event)"></span>
+                <!--<input value=""></option>-->
             </label>
         </h3>
 
-        <table class="goal-table">
+        <table class="goal-table asd" ng-show="v">
             <tbody>
                 <tr>
                     <td>Середня заробітна плата</td>
@@ -35,11 +34,11 @@
             </tbody>
         </table>
 
-        <h3 class="goal-title">
+        <h3 class="goal-title asd" ng-show="v">
             Як мені цьому навчитись?
         </h3>
 
-        <section>
+        <section class="asd" ng-show="v">
             <ul class="time-step">
                 <li class="time-step__item step-{{$index + 1}}"
                     ng-repeat="item in map track by $index"

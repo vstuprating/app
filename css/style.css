@@ -251,7 +251,7 @@ label {
 }
 
 /* line 53, /Users/MiKolka/Documents/Project/vstuprating/sass/_common.sass */
-.is-button, .select-box > select, .result-test__item__name, .search__field, .search__field--min {
+.is-button, .select-box > select, .select-box input, .select-box span, .result-test__item__name, .search__field, .search__field--min {
   background: none;
   border: 0;
   -webkit-appearance: button;
@@ -290,6 +290,21 @@ label {
 /* line 8, /Users/MiKolka/Documents/Project/vstuprating/sass/_animate.sass */
 .animate-opacity {
   transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* line 11, /Users/MiKolka/Documents/Project/vstuprating/sass/_animate.sass */
+.asd {
+  animation: vis 0.7s ease;
+}
+
+@keyframes vis {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /************************************************************************************
@@ -591,21 +606,29 @@ input:disabled {
 }
 
 /* line 66, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
-.select-box > select {
+.select-box > select, .select-box input, .select-box span {
+  display: inline-block;
+  min-width: 190px;
   padding-right: 20px;
+  text-align: left;
   color: #4a5464;
   font-family: ProximaNovaBold;
   font-size: 23px;
 }
 
-/* line 75, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
-.select-box--large > select {
+/* line 77, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
+.select-box span {
+  -webkit-appearance: none !important;
+}
+
+/* line 81, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
+.select-box--large > select, .select-box--large input, .select-box--large span {
   color: #4a5464;
   font-family: ProximaNovaLight;
   font-size: 31px;
 }
 
-/* line 80, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
+/* line 86, /Users/MiKolka/Documents/Project/vstuprating/sass/_button.sass */
 .select-box--large:before {
   content: none;
 }
