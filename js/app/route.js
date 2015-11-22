@@ -37,7 +37,16 @@ angular.module('vstupApp.route', [])
                             templateUrl: 'template/cabinet.html'
                         }
                     }
-             })
+                })
+
+                .state('page.goal', {
+                    url: 'goal',
+                    views: {
+                        '@': {
+                            templateUrl: 'template/goal.html'
+                        }
+                    }
+                })
 
             ;
     });

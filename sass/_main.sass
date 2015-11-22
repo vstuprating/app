@@ -6,6 +6,7 @@
 
 .row
     @extend .clearfix
+    float: none !important
 
 .title
     margin-bottom: 20px
@@ -332,10 +333,111 @@
 
 //.time-line__text
 
+.page-goal
+    color: #4a5464
+    font-family: ProximaNovaLight
 
 
 
 .goal-title-min
-
+    text-align: center
+    font-size: 13px
 
 .goal-title
+    margin: 50px 0
+    text-align: center
+    font-size: 31px
+    font-weight: 300
+
+.goal-table
+    max-width: 460px
+    margin: 0 auto
+
+    width: 461px
+    height: 85px
+    font-size: 18px
+
+
+.time-step
+    position: relative
+    max-width: 742px
+    height: 3px
+    margin: 100px auto 0
+    background-color: #3fbcef
+
+    &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        right: 56px
+        width: 18px
+        height: 33px
+        background: url("../pic/finish.png") no-repeat
+    
+.time-step__item
+    position: relative
+    top: -33px
+    margin-left: 40px
+    display: inline-block
+    cursor: pointer
+
+    font-size: 17px
+
+    &:before
+        content: ''
+        position: absolute
+        bottom: -30px
+        left: 5px
+        width: 20px
+        height: 20px
+        background-color: #fff
+        border: 2px solid #3fbcef
+        border-radius: 50%
+
+    &.is-active
+        &:before
+            background-color: #3fbcef
+            border: 2px solid #3fbcef
+
+    &.step-2
+        margin-left: 60px
+
+    &.step-4
+        margin-left: 80px
+
+    &.step-5
+        margin-left: 50px
+
+
+.time-step-table
+    max-width: 742px
+    margin: 100px auto 0
+
+    font-size: 18px
+
+    td
+        padding: 16px 4px
+        border-bottom: 1px solid #f2f2f2
+
+    tr.is-success
+        color: #d6d6d6
+
+        .circle
+            &:after
+                background-color: #31b573
+
+.circle
+    position: relative
+    padding-right: 75px
+
+    &:after
+        content: ''
+        position: absolute
+        top: 50%
+        right: 4px
+        width: 20px
+        height: 20px
+        margin-top: -10px
+        background-color: #fff
+        border: 2px solid #31b573
+        border-radius: 50%
