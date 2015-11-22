@@ -53,10 +53,11 @@
                    ng-show="step === m.name">
                 <tbody>
                     <tr ng-repeat="item in m.list track by $index"
-                        ng-class="{'is-success': item.success}"
-                        ng-click="item.success = !item.success">
+                        ng-class="{'is-success': item.success}">
                         <td ng-bind="::item.name"></td>
-                        <td class="circle" ng-bind="::item.course"></td>
+                        <td class="circle"
+                            ng-bind="::item.course"
+                            ng-click="item.success = !item.success"></td>
                     </tr>
                 </tbody>
             </table>
